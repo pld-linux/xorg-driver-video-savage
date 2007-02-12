@@ -1,5 +1,5 @@
 Summary:	X.org video driver for S3 Savage family video chips
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla układów graficznych z rodziny S3 Savage
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych z rodziny S3 Savage
 Name:		xorg-driver-video-savage
 Version:	2.1.2
 Release:	0.1
