@@ -1,5 +1,5 @@
 Summary:	X.org video driver for S3 Savage family video chips
-Summary(pl):	Sterownik obrazu X.org dla uk≥adÛw graficznych z rodziny S3 Savage
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla uk≈Çad√≥w graficznych z rodziny S3 Savage
 Name:		xorg-driver-video-savage
 Version:	2.1.2
 Release:	0.1
@@ -34,14 +34,14 @@ ProSavage PM133, ProSavage KM133, Twister (ProSavage PN133), TwisterK
 has acceleration limited to 2D only. Dualhead operation is supported
 on MX, IX and SuperSavage chips.
 
-%description -l pl
-Sterownik obrazu X.org dla uk≥adÛw graficznych z rodziny S3 Savage.
-Obs≥uguje karty PCI i AGP oparte na nastÍpuj±cych uk≥adach: Savage3D,
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla uk≈Çad√≥w graficznych z rodziny S3 Savage.
+Obs≈Çuguje karty PCI i AGP oparte na nastƒôpujƒÖcych uk≈Çadach: Savage3D,
 Savage4, Savage2000, Savage/MX, Savage/IX, SuperSavage/MX,
 SuperSavage/IX, ProSavage PM133, ProSavage KM133, Twister (ProSavage
 PN133), TwisterK (ProSavage KN133), ProSavage DDR, ProSavage DDR-K.
-Obs≥uga Savage2000 ma akceleracjÍ ograniczon± do operacji 2D. Tryb
-dualhead jest obs≥ugiwany na uk≥adach MX, IX i SuperSavage. 
+Obs≈Çuga Savage2000 ma akceleracjƒô ograniczonƒÖ do operacji 2D. Tryb
+dualhead jest obs≈Çugiwany na uk≈Çadach MX, IX i SuperSavage. 
 
 %prep
 %setup -q -n xf86-video-savage-%{version}
