@@ -1,12 +1,12 @@
 Summary:	X.org video driver for S3 Savage family video chips
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych z rodziny S3 Savage
 Name:		xorg-driver-video-savage
-Version:	2.2.1
-Release:	4
+Version:	2.3.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-savage-%{version}.tar.bz2
-# Source0-md5:	62b8aba48b54eaefeae87df502bf219c
+# Source0-md5:	fc21c0b76c9403fc2cdc7d924abaa461
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.57
