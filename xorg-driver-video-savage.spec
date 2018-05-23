@@ -2,11 +2,12 @@ Summary:	X.org video driver for S3 Savage family video chips
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych z rodziny S3 Savage
 Name:		xorg-driver-video-savage
 Version:	2.3.9
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-savage-%{version}.tar.bz2
 # Source0-md5:	f694b2b201fb815cd3b910e639f55bb5
+Patch0:		xorg-abi24.patch
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.60
@@ -56,6 +57,7 @@ dualhead jest obsługiwany na układach MX, IX i SuperSavage.
 
 %prep
 %setup -q -n xf86-video-savage-%{version}
+%patch0 -p1
 
 %build
 %{__libtoolize}
