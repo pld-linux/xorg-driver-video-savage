@@ -1,13 +1,12 @@
 Summary:	X.org video driver for S3 Savage family video chips
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych z rodziny S3 Savage
 Name:		xorg-driver-video-savage
-Version:	2.3.9
-Release:	3
+Version:	2.4.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-savage-%{version}.tar.bz2
-# Source0-md5:	f694b2b201fb815cd3b910e639f55bb5
-Patch0:		xorg-abi24.patch
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-savage-%{version}.tar.xz
+# Source0-md5:	ac6e576d8b95e803367f9a7a7a293719
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf >= 2.60
@@ -16,6 +15,7 @@ BuildRequires:	libdrm-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	rpmbuild(macros) >= 1.389
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-libpciaccess-devel >= 0.10
 BuildRequires:	xorg-proto-fontsproto-devel
 BuildRequires:	xorg-proto-glproto-devel
@@ -27,6 +27,7 @@ BuildRequires:	xorg-proto-xf86driproto-devel
 BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.1.0
+BuildRequires:	xz
 %{?requires_xorg_xserver_videodrv}
 Requires:	xorg-lib-libpciaccess >= 0.10
 Requires:	xorg-xserver-libdri >= 1.1.0
@@ -57,7 +58,6 @@ dualhead jest obsługiwany na układach MX, IX i SuperSavage.
 
 %prep
 %setup -q -n xf86-video-savage-%{version}
-%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -82,6 +82,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README
+%doc COPYING ChangeLog README.md
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/savage_drv.so
 %{_mandir}/man4/savage.4*
